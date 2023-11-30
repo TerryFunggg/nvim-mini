@@ -29,5 +29,15 @@ require("lazy").setup({
   {'neovim/nvim-lspconfig'},
   {'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/nvim-cmp'},
-  {'L3MON4D3/LuaSnip'},
+  {'saadparwaiz1/cmp_luasnip'},
+  {'hrsh7th/cmp-path'},
+  {'hrsh7th/cmp-cmdline'},
+  {
+	"L3MON4D3/LuaSnip",
+    dependencies = { "rafamadriz/friendly-snippets" },
+	-- follow latest release.
+	version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!).
+	build = "make install_jsregexp"
+}
 })
