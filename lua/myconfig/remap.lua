@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i","<c-g>", "<Esc>")
 vim.keymap.set("n","<c-g>", ":q!") -- no enter for safe :)
 
-vim.keymap.set("n","<leader>fd", vim.cmd.Ex)
+vim.keymap.set("n","<leader>fd", ":Ex<Return>")
 
 vim.keymap.set("n","<leader>a", '^')
 vim.keymap.set("n","<leader>e", '$')
