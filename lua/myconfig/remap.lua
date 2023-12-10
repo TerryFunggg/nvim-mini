@@ -7,6 +7,10 @@ vim.keymap.set("n","<leader>fd", ":Ex<Return>")
 vim.keymap.set("n","<leader>a", '^')
 vim.keymap.set("n","<leader>e", '$')
 
+-- tab
+vim.keymap.set("n","<leader>[", ':tabprevious<Return>')
+vim.keymap.set("n","<leader>]", ':tabnext<Return>')
+
 -- Window
 vim.keymap.set("n","ss", ':split<Return>')
 vim.keymap.set("n","sv", ':vsplit<Return>')
