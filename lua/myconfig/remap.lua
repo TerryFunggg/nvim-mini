@@ -7,19 +7,16 @@ vim.keymap.set("n","<leader>fd", ":Ex<Return>")
 vim.keymap.set("n","<leader>a", '^')
 vim.keymap.set("n","<leader>e", '$')
 
--- tab
-vim.keymap.set("n","<leader>[", ':tabprevious<Return>')
-vim.keymap.set("n","<leader>]", ':tabnext<Return>')
 
 -- Window
 vim.keymap.set("n","ss", ':split<Return>')
 vim.keymap.set("n","sv", ':vsplit<Return>')
-vim.keymap.set("n","<leader>w", '<C-w>w')
 vim.keymap.set("n","sh", '<C-w>h')
 vim.keymap.set("n","sk", '<C-w>k')
 vim.keymap.set("n","sj", '<C-w>j')
 vim.keymap.set("n","sl", '<C-w>l')
 vim.keymap.set("n","sq", ':close<Return>')
+--vim.keymap.set("n","<leader>w", '<C-w>w')
 
 -- Movement
 vim.keymap.set("n","<C-d>", '<C-d>zz')
@@ -47,3 +44,18 @@ vim.keymap.set("n","<leader>y", "\"+y")
 vim.keymap.set("n","<leader>Y", "\"+Y")
 vim.keymap.set("v","<leader>y", "\"+y")
 
+-- buffer
+vim.keymap.set("n","<leader>bb", ":ls<Return>")
+vim.keymap.set("n","<leader>ba", ":args<Return>")
+vim.keymap.set("n","<leader>bn", ":bnext<Return>")
+vim.keymap.set("n","<leader>bp", ":bprevious<Return>")
+
+-- tab
+vim.keymap.set("n","[", ':tabprevious<Return>')
+vim.keymap.set("n","]", ':tabnext<Return>')
+vim.keymap.set("n","<leader>q", ":tabclose<Return>")
+
+vim.keymap.set("n","<leader>h", ":nohlsearch<Return><C-l>")
+
+-- command
+vim.keymap.set("n","!", ":!")
