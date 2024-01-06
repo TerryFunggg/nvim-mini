@@ -51,11 +51,14 @@ vim.keymap.set("n","<leader>bn", ":bnext<Return>")
 vim.keymap.set("n","<leader>bp", ":bprevious<Return>")
 
 -- tab
-vim.keymap.set("n","[", ':tabprevious<Return>')
-vim.keymap.set("n","]", ':tabnext<Return>')
-vim.keymap.set("n","<leader>q", ":tabclose<Return>")
+vim.keymap.set("n","<leader>tn", ":tabnew<Return>")
+vim.keymap.set("n","<tab>", ":tabnext<Return>")
+vim.keymap.set("n","<leader>tq", ":tabclose<Return>")
 
+-- search
 vim.keymap.set("n","<leader>h", ":nohlsearch<Return><C-l>")
+vim.keymap.set("n","<leader>ss", "/")
+vim.keymap.set("n","<leader>sr", ":%s/")
 
 -- command
 vim.keymap.set("n","!", ":!")
