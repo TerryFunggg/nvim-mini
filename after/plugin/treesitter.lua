@@ -8,6 +8,7 @@ require'nvim-treesitter.configs'.setup {
 	  "javascript", 
 	  "typescript", 
 	  "c", 
+	  "cpp", 
 	  "lua", 
 	  "vim", 
 	  "vimdoc", 
@@ -22,6 +23,10 @@ require'nvim-treesitter.configs'.setup {
   auto_install = true,
 
   ignore_install = { },
+
+  indent = {
+    enable = false
+  },
 
   highlight = {
     enable = true,

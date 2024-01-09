@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  "folke/which-key.nvim",
   { 'rose-pine/neovim', name = 'rose-pine' },
   'nvim-lua/plenary.nvim',
   {'nvim-telescope/telescope.nvim', tag = '0.1.4'},
@@ -54,5 +53,13 @@ require("lazy").setup({
             -- Configuration here, or leave empty to use defaults
         })
     end
+  },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+  },
+  {
+    'wakatime/vim-wakatime'
   }
 })

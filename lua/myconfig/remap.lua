@@ -54,6 +54,7 @@ vim.keymap.set("n","<leader>bp", ":bprevious<Return>")
 vim.keymap.set("n","<leader>tn", ":tabnew<Return>")
 vim.keymap.set("n","<tab>", ":tabnext<Return>")
 vim.keymap.set("n","<leader>tq", ":tabclose<Return>")
+vim.keymap.set("n","<leader>tb", ":tab ball<Return>")
 
 -- search
 vim.keymap.set("n","<leader>h", ":nohlsearch<Return><C-l>")
