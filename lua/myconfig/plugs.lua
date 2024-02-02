@@ -60,6 +60,10 @@ require("lazy").setup({
     opts = {} -- this is equalent to setup({}) function
   },
   {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
     'wakatime/vim-wakatime'
   }
 })

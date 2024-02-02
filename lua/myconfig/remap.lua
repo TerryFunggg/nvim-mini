@@ -63,3 +63,7 @@ vim.keymap.set("n","<leader>sr", ":%s/")
 
 -- command
 vim.keymap.set("n","!", ":!")
+
+-- error list
+vim.keymap.set("n","<leader><leader>", ":TroubleToggle<Return>")
+--
