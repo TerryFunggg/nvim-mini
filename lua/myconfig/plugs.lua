@@ -63,5 +63,6 @@ require("lazy").setup({
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-  { "windwp/nvim-ts-autotag"}
+  { "windwp/nvim-ts-autotag"},
+  {'stevearc/aerial.nvim'},
 })
