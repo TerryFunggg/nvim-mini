@@ -65,4 +65,12 @@ require("lazy").setup({
   },
   { "windwp/nvim-ts-autotag"},
   {'stevearc/aerial.nvim'},
+  {
+    'ray-x/go.nvim',
+    config = function()
+        require("go").setup()
+    end,
+    ft = {"go", "gomod"},
+    event = {"CmdlineEnter"}
+  }
 })

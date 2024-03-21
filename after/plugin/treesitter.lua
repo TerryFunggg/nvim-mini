@@ -12,7 +12,8 @@ require'nvim-treesitter.configs'.setup {
 	  "lua", 
 	  "vim", 
 	  "vimdoc", 
-	  "query" 
+	  "query",
+      "go"
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
