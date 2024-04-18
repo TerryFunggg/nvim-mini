@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { 'rose-pine/neovim', name = 'rose-pine' },
+  'folke/tokyonight.nvim',
 
   'tpope/vim-sleuth', -- Dectect tabstop and shiftwidth automatically
 
@@ -93,7 +94,7 @@ require("lazy").setup({
   
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  --{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
