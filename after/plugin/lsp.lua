@@ -5,6 +5,17 @@ lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
   -- to learn the available actions
   lsp_zero.default_keymaps({buffer = bufnr})
+  vim.diagnostic.config({
+    virtual_text = false,
+  -- virtual_text = {
+  --   -- source = "always",  
+  --   prefix = '●',
+  -- },
+  -- severity_sort = true,
+  float = {
+    source = "always",  -- Or "if_many"
+  },
+})
 end)
 
 -- see :help lsp-zero-guide:integrate-with-mason-nvim
@@ -72,3 +83,4 @@ cmp.setup.cmdline(':', {
 })
 
 require("luasnip.loaders.from_vscode").lazy_load()
+
