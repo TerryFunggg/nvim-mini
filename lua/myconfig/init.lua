@@ -29,5 +29,5 @@ vim.opt.scrolloff = 10
 
 vim.opt.hlsearch = true
 
-require('myconfig.remap')
 require('myconfig.plugs')
+require('myconfig.remap')
