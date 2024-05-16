@@ -29,5 +29,8 @@ vim.opt.scrolloff = 10
 
 vim.opt.hlsearch = true
 
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
 require('myconfig.plugs')
 require('myconfig.remap')
