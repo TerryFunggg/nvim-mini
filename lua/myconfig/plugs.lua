@@ -43,7 +43,6 @@ require("lazy").setup({
     },
   },
 
-  {'nvim-treesitter/nvim-treesitter', cmd = 'TSUpdate'},
   {
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -94,7 +93,7 @@ require("lazy").setup({
   
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
-  --{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
@@ -143,7 +142,6 @@ require("lazy").setup({
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-  { "windwp/nvim-ts-autotag"},
   {'stevearc/aerial.nvim'},
   {
     'ray-x/go.nvim',
