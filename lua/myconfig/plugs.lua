@@ -152,7 +152,9 @@ require("lazy").setup({
     end,
     ft = {"go", "gomod"},
     event = {"CmdlineEnter"}
-  }
+  },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  { "lewis6991/gitsigns.nvim"}
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
