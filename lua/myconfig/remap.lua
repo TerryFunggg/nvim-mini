@@ -66,4 +66,9 @@ vim.keymap.set("n","!", ":!")
 
 -- error list
 vim.keymap.set("n","<leader><leader>", ":TroubleToggle<Return>")
---
+
+-- relocate macro keys
+vim.keymap.set("n","<F3>", "q")
+vim.keymap.set("n","q", "<noh>")
+vim.keymap.set("n","<F4>", "@")
+vim.keymap.set("n","@", "<noh>")
