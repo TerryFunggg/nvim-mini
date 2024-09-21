@@ -42,8 +42,6 @@ require("lazy").setup({
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     },
   },
-
-  {'nvim-treesitter/nvim-treesitter', cmd = 'TSUpdate'},
   {
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -143,7 +141,6 @@ require("lazy").setup({
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-  { "windwp/nvim-ts-autotag"},
   {'stevearc/aerial.nvim'},
   {
     'ray-x/go.nvim',
