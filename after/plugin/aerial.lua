@@ -1,5 +1,5 @@
 require("aerial").setup({
-    backends = { "treesitter", "lsp", "markdown", "asciidoc", "man" },
+    backends = { "lsp", "markdown", "asciidoc", "man" },
 
     layout = {
         max_width = { 40, 0.2},
@@ -23,6 +23,4 @@ require("aerial").setup({
         vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
     end,
 })
--- You probably also want to set a keymap to toggle aerial
-vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 

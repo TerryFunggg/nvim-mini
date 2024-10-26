@@ -1,6 +1,5 @@
 -- @since:2024-03-11
 -- @author: Terry Fung
--- Require treesitter 
 
 local augroup = vim.api.nvim_create_augroup("CodeFold", { clear = true })
 
@@ -29,8 +28,9 @@ local function main()
 
 
     opt.foldmethod = "indent"
-    -- opt.foldmethod = "expr"
-    opt.foldexpr = "nvim_treesitter#foldexpr()"
+    opt.foldmethod = "expr"
+    -- Require treesitter 
+    -- opt.foldexpr = "nvim_treesitter#foldexpr()"
     opt.foldenable = false
 
     opt.fillchars = { eob = "-", fold = " " }
