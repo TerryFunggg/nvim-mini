@@ -66,7 +66,7 @@ vim.keymap.set("n","!", ":!")
 
 -- error list
 vim.keymap.set(
-  "n","<leader><leader>", ":TroubleToggle<Return>",
+  "n","<leader><leader>", "<cmd>Trouble diagnostics toggle<cr>",
   { desc = "Trouble Toggle"}
 )
 

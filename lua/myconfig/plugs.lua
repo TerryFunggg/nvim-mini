@@ -105,6 +105,7 @@ require("lazy").setup({
   },
   {
     "folke/trouble.nvim",
+    cmd = "Trouble",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {'stevearc/aerial.nvim'},
