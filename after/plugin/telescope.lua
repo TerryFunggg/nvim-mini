@@ -1,4 +1,24 @@
 require("telescope").setup {
+    pickers = {
+        find_files = {
+            theme = "ivy",
+        },
+        help_tags = {
+            theme = "ivy",
+        },
+        keymaps = {
+            theme = "ivy",
+        },
+        buffers = {
+            theme = "ivy",
+        },
+        git_files = {
+            theme = "ivy",
+        },
+        live_grep = {
+            theme = "ivy",
+        },
+    },
     extensions = {
         ['ui-select'] = {
             require("telescope.themes").get_dropdown(),
