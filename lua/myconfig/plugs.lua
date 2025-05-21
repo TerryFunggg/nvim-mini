@@ -109,14 +109,6 @@ require("lazy").setup({
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {'stevearc/aerial.nvim'},
-  {
-    'ray-x/go.nvim',
-    config = function()
-        require("go").setup()
-    end,
-    ft = {"go", "gomod"},
-    event = {"CmdlineEnter"}
-  },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   { "lewis6991/gitsigns.nvim"}
 }, {
