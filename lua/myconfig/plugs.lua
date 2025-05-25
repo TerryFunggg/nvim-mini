@@ -105,8 +105,15 @@ require("lazy").setup({
   },
   {
     "folke/trouble.nvim",
+    opts = {}, -- for default options, refer to the configuration section for custom setup.
     cmd = "Trouble",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    keys = {
+    {
+      "<leader><leader>",
+      "<cmd>Trouble diagnostics toggle<cr>",
+      desc = "Diagnostics (Trouble)",
+    },
+  }
   },
   {'stevearc/aerial.nvim'},
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },

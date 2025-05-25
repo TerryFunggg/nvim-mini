@@ -65,10 +65,10 @@ vim.keymap.set("n","<leader>sr", ":%s/", { desc = "Replace"})
 vim.keymap.set("n","!", ":!")
 
 -- error list
-vim.keymap.set(
-  "n","<leader><leader>", "<cmd>Trouble diagnostics toggle<cr>",
-  { desc = "Trouble Toggle"}
-)
+-- vim.keymap.set(
+--  "n","<leader><leader>", "<cmd>Trouble diagnostics toggle<cr>",
+--   { desc = "Trouble Toggle"}
+-- )
 
 -- relocate macro keys
 vim.keymap.set("n","<F3>", "q")
