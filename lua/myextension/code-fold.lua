@@ -34,13 +34,13 @@ local function main()
     opt.foldenable = false
 
     opt.fillchars = { eob = "-", fold = " " }
-    opt.foldtext = "v:lua.require'myextension.code-fold'.custom_fold_text()"
+    -- opt.foldtext = "v:lua.require'myextension.code-fold'.custom_fold_text()"
 end
 
 local function setup()
     vim.api.nvim_create_autocmd("VimEnter",{
         group = augroup,
-        desc = "Better folding style using treesitter",
+        desc = "Custom folding style",
         once = true,
         callback = main
     })
