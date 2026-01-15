@@ -1,4 +1,13 @@
 require("telescope").setup {
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules/",
+            "%.git/",
+            "venv/",
+            "vendor/",
+            "__pycache__"
+        }
+    },
     pickers = {
         find_files = {
             theme = "ivy",
