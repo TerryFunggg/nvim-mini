@@ -1,0 +1,35 @@
+return {
+	{
+		"folke/trouble.nvim",
+		opts = {},
+		cmd = "Trouble",
+		keys = {
+			{
+				"<leader><leader>",
+				"<cmd>Trouble diagnostics toggle<cr>",
+				desc = "Diagnostics (Trouble)",
+			},
+		},
+	},
+	{
+		"stevearc/aerial.nvim",
+		opts = {
+			backends = { "lsp", "markdown", "asciidoc", "man" },
+			layout = {
+				max_width = { 40, 0.2 },
+				width = nil,
+				min_width = 20,
+				default_direction = "prefer_left",
+				placement = "window",
+				resize_to_content = true,
+				preserve_equality = false,
+			},
+			attach_mode = "window",
+			close_automatic_events = { "unfocus" },
+			on_attach = function(bufnr)
+				vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
+				vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
+			end,
+		},
+	},
+}
