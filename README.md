@@ -4,26 +4,32 @@ Require neovim version >= v9.0
 
 ```
 .
-├── init.lua                            -- Entry point
 ├── after
-│   └── plugin                          -- All custom plugin config files
-│       ├── aerial.lua
+│   └── plugin
+│       ├── cmp.lua
 │       ├── colors.lua
-│       ├── gitsigns.lua
-│       ├── indent-blankline.lua
+│       └── lsp.lua
+├── init.lua
+├── lazy-lock.json
+├── lua
+│   ├── config
+│   │   ├── keymaps.lua
+│   │   └── options.lua
+│   ├── myextension
+│   │   ├── afterbufwrite.lua
+│   │   ├── code-fold.lua
+│   │   ├── init.lua
+│   │   └── yankhighlight.lua
+│   └── plugins
+│       ├── colorscheme.lua
+│       ├── editing.lua
+│       ├── formatting.lua
+│       ├── git.lua
 │       ├── lsp.lua
 │       ├── mini.lua
-│       └── telescope.lua
-├── lua                                 -- neo vim config
-│   ├── myconfig
-│   │   ├── init.lua                    -- nvim settings for better edit
-│   │   ├── plugs.lua                   -- lazy plugin list
-│   │   └── remap.lua                   -- key mapping
-│   └── myextension                     -- some plugin write by own
-│       ├── afterbufwrite.lua
-│       ├── code-fold.lua
-│       ├── init.lua
-│       └── yankhighlight.lua
+│       ├── telescope.lua
+│       ├── ui.lua
+│       └── which-key.lua
 └── README.md
 ```
 
@@ -33,27 +39,41 @@ Require neovim version >= v9.0
 
 - [Lazy.nvim](https://github.com/folke/lazy.nvim)
 
-## LSP Plugins
+## LSP
 
-- [mason.nvim](https://github.com/mason-org/mason.nvim) - Manage LSP servers 
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [mason.nvim](https://github.com/mason-org/mason.nvim)
+- [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+- [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 
-- [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
+## Autocompletion
 
-## Auto completion
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Autocompletion engine
-- [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet support
+## Syntax
+
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+## Formatting
+
+- [conform.nvim](https://github.com/stevearc/conform.nvim)
 
 ## Tools
 
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Find, Filter, Preview, Pick. All lua, all the time. 
-
-- [troble.nvim](https://github.com/folke/trouble.nvim) - A pretty diagnostics, references, telescope results, quickfix and location list 
-
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
+- [oil.nvim](https://github.com/stevearc/oil.nvim)
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [mini.nvim](https://github.com/echasnovski/mini.nvim)
 
 ## Theme
 
 - [rose-pine](https://github.com/rose-pine/neovim)
-
 - [tokyonight](https://github.com/folke/tokyonight.nvim)
