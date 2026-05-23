@@ -110,7 +110,40 @@ require("lazy").setup({
   },
   {'stevearc/aerial.nvim'},
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-  { "lewis6991/gitsigns.nvim"}
+  { "lewis6991/gitsigns.nvim"},
+    -- formatting
+  {
+    'stevearc/conform.nvim',
+    event = 'BufWritePre',
+    opts = {
+      formatters_by_ft = {
+        lua = { 'stylua' },
+        python = { 'ruff_format' },
+        javascript = { 'prettierd' },
+        typescript = { 'prettierd' },
+        javascriptreact = { 'prettierd' },
+        typescriptreact = { 'prettierd' },
+        html = { 'prettierd' },
+        css = { 'prettierd' },
+        json = { 'prettierd' },
+        yaml = { 'prettierd' },
+        markdown = { 'prettierd' },
+        go = { 'gofumpt' },
+        sh = { 'shfmt' },
+        bash = { 'shfmt' },
+      },
+      format_on_save = {
+        timeout_ms = 500,
+        lsp_fallback = true,
+      },
+    },
+  },
+    -- keymap discoverability
+  {
+    'folke/which-key.nvim',
+    event = 'VeryLazy',
+    opts = {},
+  },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
