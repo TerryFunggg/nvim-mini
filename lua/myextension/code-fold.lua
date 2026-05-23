@@ -27,7 +27,6 @@ local function main()
     local opt = vim.opt
 
 
-    opt.foldmethod = "indent"
     opt.foldmethod = "expr"
     -- Require treesitter 
     -- opt.foldexpr = "nvim_treesitter#foldexpr()"

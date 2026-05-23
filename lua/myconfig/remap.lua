@@ -4,9 +4,6 @@ vim.keymap.set("n","<c-g>", ":q!") -- no enter for safe :)
 
 vim.keymap.set("n","<leader>fd", ":Ex<Return>", {desc="Ex"})
 
-vim.keymap.set("n","<leader>a", '^')
-vim.keymap.set("n","<leader>e", '$')
-
 
 -- Window
 vim.keymap.set("n","ss", ':split<Return>', {desc="sSplit"})
@@ -75,20 +72,6 @@ vim.keymap.set("n","<F3>", "q")
 vim.keymap.set("n","q", "<noh>")
 vim.keymap.set("n","<F4>", "@")
 vim.keymap.set("n","@", "<noh>")
-
--- git
-vim.keymap.set(
-  "n","<leader>gp", ":Gitsigns prev_hunk <Return>",
-  { desc = "Peek Hunk"}
-)
-vim.keymap.set(
-  "n","<leader>gs", ":Gitsigns stage_hunk <Return>",
-  { desc = "Stage Hunk"}
-)
-vim.keymap.set(
-  "n","<leader>gr", ":Gitsigns reset_hunk <Return>",
-  { desc = "Reset Hunk"}
-)
 
 vim.keymap.set(
   "n", "<leader>a", "<cmd>AerialToggle!<CR>", 
