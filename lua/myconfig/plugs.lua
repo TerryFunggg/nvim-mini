@@ -42,22 +42,26 @@ require("lazy").setup({
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     },
   },
+    -- LSP
   {
     'neovim/nvim-lspconfig',
+    event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
-      {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
-      -- Automatically install LSPs and related tools to stdpath for Neovim
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
-      'WhoIsSethDaniel/mason-tool-installer.nvim',
-
-      -- Useful status updates for LSP.
-      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       { 'j-hui/fidget.nvim', opts = {} },
-
-      -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
-      -- used for completion, annotations and signatures of Neovim apis
-      { 'folke/neodev.nvim', opts = {} },
+    },
+  },
+    -- Mason tool installer - ensures tools are installed
+  {
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    opts = {
+      ensure_installed = {
+        -- LSP servers
+        'lua_ls', 'ts_ls', 'html', 'cssls',
+        'pyright', 'bashls', 'jsonls', 'yamlls',
+        'stylua', 'prettierd', 'ruff', 'shfmt',
+      },
     },
   },
   -- autocomplete
@@ -65,21 +69,10 @@ require("lazy").setup({
     'hrsh7th/nvim-cmp',
     dependencies = {
         {'hrsh7th/cmp-nvim-lsp'},
+        {'hrsh7th/cmp-nvim-lsp-signature-help'},
         {'hrsh7th/cmp-path'},
         {'hrsh7th/cmp-cmdline'},
     },
-  },
-  -- snippet
-  {
-	"L3MON4D3/LuaSnip",
-    dependencies = { 
-        "rafamadriz/friendly-snippets",
-        "saadparwaiz1/cmp_luasnip",
-    },
-	-- follow latest release.
-	version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-	-- install jsregexp (optional!).
-	build = "make install_jsregexp"
   },
   -- better comment
   {
