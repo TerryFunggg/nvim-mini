@@ -4,31 +4,26 @@ Require neovim version >= v9.0
 
 ```
 .
-├── after
-│   └── plugin
-│       ├── cmp.lua
-│       ├── colors.lua
-│       └── lsp.lua
 ├── init.lua
 ├── lazy-lock.json
 ├── lua
 │   ├── config
 │   │   ├── keymaps.lua
 │   │   └── options.lua
-│   ├── myextension
-│   │   ├── afterbufwrite.lua
-│   │   ├── code-fold.lua
-│   │   ├── init.lua
-│   │   └── yankhighlight.lua
 │   └── plugins
+│       ├── code-fold.lua
+│       ├── colors.lua
 │       ├── colorscheme.lua
+│       ├── cmp.lua
 │       ├── editing.lua
 │       ├── formatting.lua
 │       ├── fzf-lua.lua
 │       ├── git.lua
 │       ├── lsp.lua
+│       ├── lsp-setup.lua
 │       ├── mini.lua
-│       └── ui.lua
+│       ├── ui.lua
+│       └── yankhighlight.lua
 └── README.md
 ```
 

@@ -38,6 +38,3 @@ require("lazy").setup("plugins", {
 
 -- Load keymaps after plugins
 require("config.keymaps")
-
--- Load custom extensions
-require("myextension")
