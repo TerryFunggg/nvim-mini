@@ -1,0 +1,35 @@
+name: Neovim Boot Test
+
+on:
+  push:
+    branches:
+      - replace-telescope-with-fzf-lua
+
+jobs:
+  boot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: stable
+
+      - name: Install fzf binary
+        run: sudo apt-get update && sudo apt-get install -y fzf
+
+      - name: Headless boot test
+        run: |
+          mkdir -p /tmp/nvim-data /tmp/nvim-config
+          export XDG_DATA_HOME=/tmp/nvim-data
+          export XDG_CONFIG_HOME=/tmp/nvim-config
+          cp -r . /tmp/nvim-config/nvim
+          nvim --headless -u /tmp/nvim-config/nvim/init.lua -c "qa!" 2>&1 | tee boot.log
+          if grep -qiE "error|E[0-9]{3,4}:|stack traceback" boot.log; then
+            echo "Boot test failed"
+            exit 1
+          fi
+          echo "Boot test passed"
