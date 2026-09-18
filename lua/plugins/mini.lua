@@ -2,35 +2,48 @@ return {
 	{
 		"echasnovski/mini.nvim",
 		config = function()
+			-- Basic mini config
+			require("mini.basics").setup({
+				options = {
+					extra_ui = true,
+					win_borders = 'double'
+				},
+				mappings = {
+					windows = true
+				}
+			})
 			-- Text editing
-			require("mini.ai").setup({ n_lines = 500 })
+			-- like vim surround
 			require("mini.surround").setup()
+			-- gc comment, gcc comment line
 			require("mini.comment").setup()
+			-- smart symbol pair
 			require("mini.pairs").setup()
+			-- select text and move like fly
 			require("mini.move").setup()
-			require("mini.operators").setup()
-			require("mini.splitjoin").setup()
-			require("mini.trailspace").setup()
+			-- split or join line/object
+			require("mini.splitjoin").setup({
+				mappings = {
+					toggle = 'gJ'
+				}
+			})
 
+			-- General
 			-- Navigation and pickers
 			require("mini.pick").setup()
 			require("mini.files").setup()
+			vim.keymap.set("n", "<F2>", "<cmd>lua MiniFiles.open()<CR>", { desc = "File Explore" })
 			require("mini.fuzzy").setup()
 			require("mini.extra").setup()
 
-			-- UI
-			local statusline = require("mini.statusline")
-			statusline.setup({ use_icons = vim.g.have_nerd_font })
-			statusline.section_location = function()
-				return "%2l:%-2v"
-			end
+			-- Appearance
+			-- highline the trailspace
+			require("mini.statusline").setup()
+			require("mini.trailspace").setup()
 			require("mini.icons").setup()
 			require("mini.indentscope").setup()
-			require("mini.cursorword").setup()
 			require("mini.hipatterns").setup()
 			require("mini.animate").setup()
-			require("mini.tabline").setup()
-			require("mini.starter").setup()
 		end,
 		keys = {
 			{ "<leader>ff", "<cmd>Pick files<cr>", desc = "Find files" },
