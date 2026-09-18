@@ -12,7 +12,13 @@ return {
       { "<leader>fp", "<cmd>FzfLua git_files<cr>", desc = "Find Git" },
       { "<leader>fh", "<cmd>FzfLua help_tags<cr>", desc = "Help" },
       { "<leader>fk", "<cmd>FzfLua keymaps<cr>", desc = "Keys" },
-      { "<leader>fc", "<cmd>FzfLua files cwd=" .. vim.fn.stdpath("config") .. "<cr>", desc = "Search Nvim Config" },
+      {
+        "<leader>fc",
+        function()
+          require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
+        end,
+        desc = "Search Nvim Config",
+      },
       { "<leader>/", "<cmd>FzfLua blines<cr>", desc = "Fuzzily search" },
     },
     opts = {
