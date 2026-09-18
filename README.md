@@ -48,11 +48,6 @@ Require neovim version >= v9.0
 ## Autocompletion
 
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-
-## Syntax
-
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ## Formatting
 
@@ -63,7 +58,6 @@ Require neovim version >= v9.0
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [oil.nvim](https://github.com/stevearc/oil.nvim)
 - [aerial.nvim](https://github.com/folke/aerial.nvim)
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
