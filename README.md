@@ -11,7 +11,6 @@ Require neovim version >= v9.0
 │   │   ├── keymaps.lua
 │   │   └── options.lua
 │   └── plugins
-│       ├── code-fold.lua
 │       ├── colorscheme.lua
 │       ├── editing.lua
 │       ├── formatting.lua
@@ -20,8 +19,7 @@ Require neovim version >= v9.0
 │       ├── mini.lua
 │       ├── telescope.lua
 │       ├── ui.lua
-│       ├── which-key.lua
-│       └── yankhighlight.lua
+│       └── which-key.lua
 └── README.md
 ```
 
