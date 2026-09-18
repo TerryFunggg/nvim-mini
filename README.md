@@ -37,6 +37,7 @@ Require neovim version >= v9.0
 
 - Native Neovim LSP (`vim.lsp.config` / `vim.lsp.enable`)
   - lua_ls, gopls, clangd
+- [Mason](https://github.com/williamboman/mason.nvim) + [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim) for installing server binaries
 
 ## Formatting
 
