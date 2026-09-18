@@ -5,31 +5,31 @@ Require neovim version >= v9.0
 ```
 .
 ├── after
-│   └── plugin
-│       ├── cmp.lua
-│       ├── colors.lua
-│       └── lsp.lua
+│   └── plugin
+│       ├── cmp.lua
+│       ├── colors.lua
+│       └── lsp.lua
 ├── init.lua
 ├── lazy-lock.json
 ├── lua
-│   ├── config
-│   │   ├── keymaps.lua
-│   │   └── options.lua
-│   ├── myextension
-│   │   ├── afterbufwrite.lua
-│   │   ├── code-fold.lua
-│   │   ├── init.lua
-│   │   └── yankhighlight.lua
-│   └── plugins
-│       ├── colorscheme.lua
-│       ├── editing.lua
-│       ├── formatting.lua
-│       ├── fzf-lua.lua
-│       ├── git.lua
-│       ├── lsp.lua
-│       ├── mini.lua
-│       ├── ui.lua
-│       └── which-key.lua
+│   ├── config
+│   │   ├── keymaps.lua
+│   │   └── options.lua
+│   ├── myextension
+│   │   ├── afterbufwrite.lua
+│   │   ├── code-fold.lua
+│   │   ├── init.lua
+│   │   └── yankhighlight.lua
+│   └── plugins
+│       ├── colorscheme.lua
+│       ├── editing.lua
+│       ├── formatting.lua
+│       ├── fzf-lua.lua
+│       ├── git.lua
+│       ├── lsp.lua
+│       ├── mini.lua
+│       ├── ui.lua
+│       └── which-key.lua
 └── README.md
 ```
 
@@ -61,7 +61,7 @@ Require neovim version >= v9.0
 
 ## Tools
 
-- [fzf-lua.nvim](https://github.com/ibhagwan/fzf-lua.nvim)
+- [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
