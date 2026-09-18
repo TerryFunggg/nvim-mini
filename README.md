@@ -66,7 +66,7 @@ Require neovim version >= v9.0
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
-- [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- [aerial.nvim](https://github.com/folke/aerial.nvim)
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
