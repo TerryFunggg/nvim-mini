@@ -66,10 +66,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
     map('gD', vim.lsp.buf.declaration, '[G]o to [D]eclaration')
 
     -- Show references
-    map('gr', require('telescope.builtin').lsp_references, '[G]o to [R]eferences')
+    map('gr', function()
+      require('fzf-lua').lsp_references()
+    end, '[G]o to [R]eferences')
 
     -- Show implementation
-    map('gi', require('telescope.builtin').lsp_implementations, '[G]o to [I]mplementation')
+    map('gi', function()
+      require('fzf-lua').lsp_implementations()
+    end, '[G]o to [I]mplementation')
 
     -- Show type definition
     map('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
@@ -92,10 +96,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, '[F]ormat')
 
     -- Workspace symbol search
-    map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+    map('<leader>ws', function()
+      require('fzf-lua').lsp_live_workspace_symbols()
+    end, '[W]orkspace [S]ymbols')
 
     -- Document symbol search
-    map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+    map('<leader>ds', function()
+      require('fzf-lua').lsp_document_symbols()
+    end, '[D]ocument [S]ymbols')
 
     -- Navigate diagnostics
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { buffer = event.buf, desc = 'Go to previous diagnostic' })
