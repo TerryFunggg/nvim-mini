@@ -37,11 +37,6 @@ Require neovim version >= v9.0
 ## Autocompletion
 
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-
-## Syntax
-
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ## Formatting
 
