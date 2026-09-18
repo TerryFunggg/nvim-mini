@@ -33,6 +33,11 @@ Require neovim version >= v9.0
   - pick, files, fuzzy, extra
   - statusline, trailspace, icons, indentscope, hipatterns, animate
 
+## LSP
+
+- Native Neovim LSP (`vim.lsp.config` / `vim.lsp.enable`)
+  - lua_ls, gopls, clangd
+
 ## Formatting
 
 - [conform.nvim](https://github.com/stevearc/conform.nvim)
