@@ -28,8 +28,7 @@ Require neovim version >= v9.0
 │       ├── git.lua
 │       ├── lsp.lua
 │       ├── mini.lua
-│       ├── ui.lua
-│       └── which-key.lua
+│       └── ui.lua
 └── README.md
 ```
 
@@ -64,7 +63,6 @@ Require neovim version >= v9.0
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [which-key.nvim](https://github.com/folke/which-key.nvim)
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
 - [aerial.nvim](https://github.com/folke/aerial.nvim)
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
