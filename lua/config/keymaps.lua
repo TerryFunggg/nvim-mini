@@ -1,4 +1,9 @@
 vim.g.mapleader = " "
+
+-- remove default keymap
+vim.keymap.set("n", "J", "<nop>")
+
+
 vim.keymap.set("i", "<c-g>", "<Esc>", { desc = "Exit insert mode" })
 vim.keymap.set("n", "<c-g>", "<cmd>q!<CR>", { desc = "Force quit" })
 
@@ -27,8 +32,8 @@ vim.keymap.set("i", "<c-p>", "<Up>", { desc = "Move up" })
 vim.keymap.set("i", "<c-n>", "<Down>", { desc = "Move down" })
 
 -- Move lines
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
+-- vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
+-- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 
 -- Yank
 vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank to system clipboard" })

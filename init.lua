@@ -16,28 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require("config.options")
 
 -- Load plugins (auto-discovers lua/plugins/*.lua)
-require("lazy").setup("plugins", {
-	ui = {
-		icons = vim.g.have_nerd_font and {} or {
-			cmd = "⌘",
-			config = "🛠",
-			event = "📅",
-			ft = "📂",
-			init = "⚙",
-			keys = "🗝",
-			plugin = "🔌",
-			runtime = "💻",
-			require = "🌙",
-			source = "📄",
-			start = "🚀",
-			task = "📌",
-			lazy = "💤 ",
-		},
-	},
-})
+require("lazy").setup("plugins", {})
 
 -- Load keymaps after plugins
 require("config.keymaps")
-
--- Load custom extensions
-require("myextension")
