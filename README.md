@@ -15,8 +15,7 @@ Require neovim version >= v9.0
 │       ├── formatting.lua
 │       ├── git.lua
 │       ├── lsp.lua
-│       ├── mini.lua
-│       └── ui.lua
+│       └── mini.lua
 └── README.md
 ```
 
@@ -42,10 +41,6 @@ Require neovim version >= v9.0
 ## Formatting
 
 - [conform.nvim](https://github.com/stevearc/conform.nvim)
-
-## UI
-
-- [trouble.nvim](https://github.com/folke/trouble.nvim)
 
 ## Git
 
