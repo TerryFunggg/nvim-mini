@@ -15,8 +15,7 @@ Require neovim version >= v9.0
 │       ├── formatting.lua
 │       ├── git.lua
 │       ├── lsp.lua
-│       ├── mini.lua
-│       └── ui.lua
+│       └── mini.lua
 └── README.md
 ```
 
@@ -33,13 +32,15 @@ Require neovim version >= v9.0
   - pick, files, fuzzy, extra
   - statusline, trailspace, icons, indentscope, hipatterns, animate
 
+## LSP
+
+- Native Neovim LSP (`vim.lsp.config` / `vim.lsp.enable`)
+  - lua_ls, gopls, clangd
+- [Mason](https://github.com/williamboman/mason.nvim) + [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim) for installing server binaries
+
 ## Formatting
 
 - [conform.nvim](https://github.com/stevearc/conform.nvim)
-
-## UI
-
-- [trouble.nvim](https://github.com/folke/trouble.nvim)
 
 ## Git
 
